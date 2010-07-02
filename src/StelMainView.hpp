@@ -116,6 +116,11 @@ public:
 	//! Returns the desired OpenGL format settings.
 	static QSurfaceFormat getDesiredGLFormat(QSettings *configuration);
 
+	//! Return the QGLWidget encapsulating the Stellarium main sky view.
+	//! Use its layout if you want to rendering OpenGL Graphics.
+	//! Added for PrintSky plugin.
+	StelGLWidget* getStelQGLWidget() {return glWidget;}
+
 public slots:
 
 	//! Set whether fullscreen is activated or not
