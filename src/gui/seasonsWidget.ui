@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>seasonsWidget</class>
+ <widget class="QWidget" name="seasonsWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>575</width>
+    <height>215</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>1</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="9" column="1">
+    <widget class="QLabel" name="labelDuration2">
+     <property name="text">
+      <string>Duration:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="3">
+    <layout class="QHBoxLayout" name="DecemberSolsticeLayout">
+     <item>
+      <widget class="QLabel" name="labelDecemberSolstice">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Winter</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="buttonDecemberSolsticePrevious">
+       <property name="toolTip">
+        <string>Previous December Solstice</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../data/gui/guiRes.qrc">
+         <normaloff>:/graphicGui/btTimeRewind-off.png</normaloff>
+         <disabledoff>:/graphicGui/btTimeRewind-off.png</disabledoff>:/graphicGui/btTimeRewind-off.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="buttonDecemberSolsticeCurrent">
+       <property name="toolTip">
+        <string>Current December Solstice</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../data/gui/guiRes.qrc">
+         <normaloff>:/graphicGui/bbtTime-off.png</normaloff>
+         <disabledoff>:/graphicGui/bbtTime-off.png</disabledoff>:/graphicGui/bbtTime-off.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="buttonDecemberSolsticeNext">
+       <property name="toolTip">
+        <string>Next December Solstice</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../data/gui/guiRes.qrc">
+         <normaloff>:/graphicGui/btTimeForward-off.png</normaloff>
+         <disabledoff>:/graphicGui/btTimeForward-off.png</disabledoff>:/graphicGui/btTimeForward-off.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="7" column="2">
+    <widget class="QLabel" name="labelSeptemberEquinoxLT"/>
+   </item>
+   <item row="5" column="2" colspan="2">
+    <widget class="Line" name="line">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>1</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>1</height>
+      </size>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLabel" name="labelLT1">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Local Time:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="QLabel" name="labelLT2">
+     <property name="text">
+      <string>Local Time:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLabel" name="labelJD1">
+     <property name="text">
+      <string>Julian Day:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="2">
+    <widget class="QLabel" name="labelSeptemberEquinoxJD"/>
+   </item>
+   <item row="8" column="1">
+    <widget class="QLabel" name="labelJD2">
+     <property name="text">
+      <string>Julian Day:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <layout class="QHBoxLayout" name="JuneSolsticeLayout">
+     <item>
+      <widget class="QLabel" name="labelJuneSolstice">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Summer</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="buttonJuneSolsticePrevious">
+       <property name="toolTip">
+        <string>Previous June Solstice</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../data/gui/guiRes.qrc">
+         <normaloff>:/graphicGui/btTimeRewind-off.png</normaloff>
+         <disabledoff>:/graphicGui/btTimeRewind-off.png</disabledoff>:/graphicGui/btTimeRewind-off.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="buttonJuneSolsticeCurrent">
+       <property name="toolTip">
+        <string>Current June Solstice</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../data/gui/guiRes.qrc">
+         <normaloff>:/graphicGui/bbtTime-off.png</normaloff>
+         <disabledoff>:/graphicGui/bbtTime-off.png</disabledoff>:/graphicGui/bbtTime-off.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="buttonJuneSolsticeNext">
+       <property name="toolTip">
+        <string>Next June Solstice</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../data/gui/guiRes.qrc">
+         <normaloff>:/graphicGui/btTimeForward-off.png</normaloff>
+         <disabledoff>:/graphicGui/btTimeForward-off.png</disabledoff>:/graphicGui/btTimeForward-off.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="2">
+    <widget class="QLabel" name="labelMarchEquinoxLT"/>
+   </item>
+   <item row="2" column="3">
+    <widget class="QLabel" name="labelJuneSolsticeLT"/>
+   </item>
+   <item row="4" column="3">
+    <widget class="QLabel" name="labelJuneSolsticeDuration"/>
+   </item>
+   <item row="1" column="2">
+    <layout class="QHBoxLayout" name="MarchEquinoxLayout">
+     <item>
+      <widget class="QLabel" name="labelMarchEquinox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Spring</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="buttonMarchEquinoxPrevious">
+       <property name="toolTip">
+        <string>Previous March Equinox</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../data/gui/guiRes.qrc">
+         <normaloff>:/graphicGui/btTimeRewind-off.png</normaloff>
+         <disabledoff>:/graphicGui/btTimeRewind-off.png</disabledoff>:/graphicGui/btTimeRewind-off.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="buttonMarchEquinoxCurrent">
+       <property name="toolTip">
+        <string>Current March Equinox</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../data/gui/guiRes.qrc">
+         <normaloff>:/graphicGui/bbtTime-off.png</normaloff>
+         <disabledoff>:/graphicGui/bbtTime-off.png</disabledoff>:/graphicGui/bbtTime-off.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="buttonMarchEquinoxNext">
+       <property name="toolTip">
+        <string>Next March Equinox</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../data/gui/guiRes.qrc">
+         <normaloff>:/graphicGui/btTimeForward-off.png</normaloff>
+         <disabledoff>:/graphicGui/btTimeForward-off.png</disabledoff>:/graphicGui/btTimeForward-off.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="4" column="1">
+    <widget class="QLabel" name="labelDuration1">
+     <property name="text">
+      <string>Duration:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="3">
+    <widget class="QLabel" name="labelDecemberSolsticeDuration"/>
+   </item>
+   <item row="7" column="3">
+    <widget class="QLabel" name="labelDecemberSolsticeLT"/>
+   </item>
+   <item row="8" column="3">
+    <widget class="QLabel" name="labelDecemberSolsticeJD"/>
+   </item>
+   <item row="3" column="2">
+    <widget class="QLabel" name="labelMarchEquinoxJD"/>
+   </item>
+   <item row="1" column="1">
+    <layout class="QHBoxLayout" name="YearLayout">
+     <item>
+      <widget class="QLabel" name="labelYear">
+       <property name="text">
+        <string>Year:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelCurrentYear">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="4" column="2">
+    <widget class="QLabel" name="labelMarchEquinoxDuration"/>
+   </item>
+   <item row="3" column="3">
+    <widget class="QLabel" name="labelJuneSolsticeJD"/>
+   </item>
+   <item row="9" column="2">
+    <widget class="QLabel" name="labelSeptemberEquinoxDuration"/>
+   </item>
+   <item row="6" column="2">
+    <layout class="QHBoxLayout" name="SeptemberEquinoxLayout">
+     <item>
+      <widget class="QLabel" name="labelSeptemberEquinox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Fall</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="buttonSeptemberEquinoxPrevious">
+       <property name="toolTip">
+        <string>Previous September Equinox</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../data/gui/guiRes.qrc">
+         <normaloff>:/graphicGui/btTimeRewind-off.png</normaloff>
+         <disabledoff>:/graphicGui/btTimeRewind-off.png</disabledoff>:/graphicGui/btTimeRewind-off.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="buttonSeptemberEquinoxCurrent">
+       <property name="toolTip">
+        <string>Current September Equinox</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../data/gui/guiRes.qrc">
+         <normaloff>:/graphicGui/bbtTime-off.png</normaloff>
+         <disabledoff>:/graphicGui/bbtTime-off.png</disabledoff>:/graphicGui/bbtTime-off.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="buttonSeptemberEquinoxNext">
+       <property name="toolTip">
+        <string>Next September Equinox</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../data/gui/guiRes.qrc">
+         <normaloff>:/graphicGui/btTimeForward-off.png</normaloff>
+         <disabledoff>:/graphicGui/btTimeForward-off.png</disabledoff>:/graphicGui/btTimeForward-off.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../data/gui/guiRes.qrc"/>
+ </resources>
+ <connections/>
+</ui>
