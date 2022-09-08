@@ -28,7 +28,7 @@ QFrame {
 }
 
 QFrame[frameShape="4"],   /* QFrame::HLine == 0x0004 */
-QFrame[frameShape="5"] { /* QFrame::VLine == 0x0005 */
+QFrame[frameShape="5"] {  /* QFrame::VLine == 0x0005 */
         border: 1px solid rgb(31, 31, 31);
 }
 
@@ -1029,4 +1029,17 @@ QMessageBox {
 
 QColorDialog {
         background-color: rgb(143, 143, 143);
+}
+
+/*************************************************************************
+ * Seasons Widget
+ *************************************************************************/
+
+SeasonsWidget QLabel {
+	color: rgb(238, 238, 238);
+}
+
+SeasonsWidget QFrame[frameShape="4"],   /* QFrame::HLine == 0x0004 */
+SeasonsWidget QFrame[frameShape="5"] {  /* QFrame::VLine == 0x0005 */
+	border: 1px solid rgb(238, 238, 238);
 }

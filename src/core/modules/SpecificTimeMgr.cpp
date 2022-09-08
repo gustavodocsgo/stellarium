@@ -480,6 +480,8 @@ void SpecificTimeMgr::nextMarchEquinox()
 	double estime = getEquinox(year + 1, Equinox::March);
 	if (estime>0.)
 		core->setJDE(estime);
+
+	emit eventYearChanged();
 }
 
 void SpecificTimeMgr::previousMarchEquinox()
@@ -490,6 +492,8 @@ void SpecificTimeMgr::previousMarchEquinox()
 	double estime = getEquinox(year - 1, Equinox::March);
 	if (estime>0.)
 		core->setJDE(estime);
+
+	emit eventYearChanged();
 }
 
 void SpecificTimeMgr::currentSeptemberEquinox()
@@ -510,6 +514,8 @@ void SpecificTimeMgr::nextSeptemberEquinox()
 	double estime = getEquinox(year + 1, Equinox::September);
 	if (estime>0.)
 		core->setJDE(estime);
+
+	emit eventYearChanged();
 }
 
 void SpecificTimeMgr::previousSeptemberEquinox()
@@ -520,6 +526,8 @@ void SpecificTimeMgr::previousSeptemberEquinox()
 	double estime = getEquinox(year - 1, Equinox::September);
 	if (estime>0.)
 		core->setJDE(estime);
+
+	emit eventYearChanged();
 }
 
 void SpecificTimeMgr::currentJuneSolstice()
@@ -540,6 +548,8 @@ void SpecificTimeMgr::nextJuneSolstice()
 	double estime = getSolstice(year + 1, Solstice::June);
 	if (estime>0.)
 		core->setJDE(estime);
+
+	emit eventYearChanged();
 }
 
 void SpecificTimeMgr::previousJuneSolstice()
@@ -550,6 +560,8 @@ void SpecificTimeMgr::previousJuneSolstice()
 	double estime = getSolstice(year - 1, Solstice::June);
 	if (estime>0.)
 		core->setJDE(estime);
+
+	emit eventYearChanged();
 }
 
 void SpecificTimeMgr::currentDecemberSolstice()
@@ -570,6 +582,8 @@ void SpecificTimeMgr::nextDecemberSolstice()
 	double estime = getSolstice(year + 1, Solstice::December);
 	if (estime>0.)
 		core->setJDE(estime);
+
+	emit eventYearChanged();
 }
 
 void SpecificTimeMgr::previousDecemberSolstice()
@@ -580,4 +594,6 @@ void SpecificTimeMgr::previousDecemberSolstice()
 	double estime = getSolstice(year - 1, Solstice::December);
 	if (estime>0.)
 		core->setJDE(estime);
+
+	emit eventYearChanged();
 }
