@@ -355,6 +355,8 @@ IF(STELLARIUM_GUI_MODE STREQUAL "Standard")
           gui/TonemappingDialog.cpp
           gui/SkylightDialog.hpp
           gui/SkylightDialog.cpp
+          gui/SeasonsWidget.hpp
+          gui/SeasonsWidget.cpp
      )
 
      ################# compiles .ui files ############
