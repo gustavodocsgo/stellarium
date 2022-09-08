@@ -38,7 +38,7 @@
    <item row="8" column="1">
     <widget class="QLabel" name="labelJD2">
      <property name="text">
-      <string>Julian date:</string>
+      <string>Julian Day</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -57,7 +57,7 @@
    <item row="4" column="1">
     <widget class="QLabel" name="labelDuration1">
      <property name="text">
-      <string>Duration:</string>
+      <string>Duration</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -67,7 +67,7 @@
    <item row="9" column="1">
     <widget class="QLabel" name="labelDuration2">
      <property name="text">
-      <string>Duration:</string>
+      <string>Duration</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -88,7 +88,7 @@
         </sizepolicy>
        </property>
        <property name="text">
-        <string>Winter</string>
+        <string comment="season">Winter</string>
        </property>
       </widget>
      </item>
@@ -176,7 +176,7 @@
    <item row="7" column="1">
     <widget class="QLabel" name="labelLT2">
      <property name="text">
-      <string>Local Time:</string>
+      <string>Local Time</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -210,7 +210,7 @@
      <item>
       <widget class="QLabel" name="labelYear">
        <property name="text">
-        <string>Year:</string>
+        <string>Year</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -227,6 +227,19 @@
        <property name="text">
         <string/>
        </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelYearDuration">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
       </widget>
      </item>
     </layout>
@@ -240,7 +253,7 @@
       </sizepolicy>
      </property>
      <property name="text">
-      <string>Local Time:</string>
+      <string>Local Time</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -258,7 +271,7 @@
         </sizepolicy>
        </property>
        <property name="text">
-        <string>Fall</string>
+        <string comment="season">Fall</string>
        </property>
       </widget>
      </item>
@@ -332,7 +345,7 @@
         </sizepolicy>
        </property>
        <property name="text">
-        <string>Spring</string>
+        <string comment="season">Spring</string>
        </property>
       </widget>
      </item>
@@ -422,7 +435,7 @@
         </sizepolicy>
        </property>
        <property name="text">
-        <string>Summer</string>
+        <string comment="season">Summer</string>
        </property>
       </widget>
      </item>
@@ -485,7 +498,7 @@
    <item row="3" column="1">
     <widget class="QLabel" name="labelJD1">
      <property name="text">
-      <string>Julian date:</string>
+      <string>Julian Day</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
