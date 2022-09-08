@@ -43,6 +43,7 @@ class ViewDialog;
 class ShortcutsDialog;
 class AstroCalcDialog;
 class ObsListDialog;
+class SpecificTimeDialog;
 #ifdef ENABLE_SCRIPT_CONSOLE
 class ScriptConsole;
 #endif
@@ -346,7 +347,8 @@ private:
 	ScriptConsole* scriptConsole;
 #endif
 	AstroCalcDialog* astroCalcDialog;
-    ObsListDialog* obsListDialog;
+	ObsListDialog* obsListDialog;
+	SpecificTimeDialog* specificTimeDialog;
 
 	bool flagShowFlipButtons;
 	StelButton* flipVert;

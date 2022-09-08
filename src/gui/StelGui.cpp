@@ -49,6 +49,7 @@
 #include "ShortcutsDialog.hpp"
 #include "AstroCalcDialog.hpp"
 #include "ObsListDialog.hpp"
+#include "SpecificTimeDialog.hpp"
 
 #include <QDebug>
 #include <QTimeLine>
@@ -91,6 +92,7 @@ StelGui::StelGui()
 #endif
 	, astroCalcDialog(Q_NULLPTR)
 	, obsListDialog(Q_NULLPTR)
+	, specificTimeDialog(Q_NULLPTR)
 	, flagShowFlipButtons(false)
 	, flipVert(Q_NULLPTR)
 	, flipHoriz(Q_NULLPTR)
@@ -186,6 +188,11 @@ StelGui::~StelGui()
 		delete obsListDialog;
 		obsListDialog = Q_NULLPTR;
 	}
+	if (specificTimeDialog)
+	{
+		delete specificTimeDialog;
+		specificTimeDialog = Q_NULLPTR;
+	}
 }
 
 void StelGui::init(QGraphicsWidget *atopLevelGraphicsWidget)
@@ -206,6 +213,7 @@ void StelGui::init(QGraphicsWidget *atopLevelGraphicsWidget)
 #endif
 	astroCalcDialog = new AstroCalcDialog(atopLevelGraphicsWidget);
 	obsListDialog = new ObsListDialog(atopLevelGraphicsWidget);
+	specificTimeDialog = new SpecificTimeDialog(atopLevelGraphicsWidget);
 
 	///////////////////////////////////////////////////////////////////////
 	// Create all the main actions of the program, associated with shortcuts
@@ -244,6 +252,7 @@ void StelGui::init(QGraphicsWidget *atopLevelGraphicsWidget)
 	actionsMgr->addAction("actionShow_Shortcuts_Window_Global", windowsGroup, N_("Shortcuts window"), shortcutsDialog, "visible", "F7", "", true);
 	actionsMgr->addAction("actionShow_AstroCalc_Window_Global", windowsGroup, N_("Astronomical calculations window"), astroCalcDialog, "visible", "F10", "", true);
 	actionsMgr->addAction("actionShow_ObsList_Window_Global", windowsGroup, N_("Observing list"), obsListDialog, "visible", "Alt+B", "", true);
+	actionsMgr->addAction("actionShow_SpecificTime_Window_Global", windowsGroup, N_("Specific time window"), specificTimeDialog, "visible", "Alt+D", "", true);
 	actionsMgr->addAction("actionSave_Copy_Object_Information_Global", miscGroup, N_("Copy selected object information to clipboard"), this, "copySelectedObjectInfo()", "Ctrl+Shift+C", "", true);
 
 	QSettings* conf = StelApp::getInstance().getSettings();
@@ -481,6 +490,7 @@ void StelGui::setStelStyle(const QString& section)
 #endif // ENABLE_SCRIPT_CONSOLE	
 	astroCalcDialog->styleChanged();
 	obsListDialog->styleChanged();
+	specificTimeDialog->styleChanged();
 }
 
 

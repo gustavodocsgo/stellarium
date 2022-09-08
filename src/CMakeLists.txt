@@ -357,6 +357,8 @@ IF(STELLARIUM_GUI_MODE STREQUAL "Standard")
           gui/SkylightDialog.cpp
           gui/SeasonsWidget.hpp
           gui/SeasonsWidget.cpp
+          gui/SpecificTimeDialog.hpp
+          gui/SpecificTimeDialog.cpp
      )
 
      ################# compiles .ui files ############
@@ -384,6 +386,7 @@ IF(STELLARIUM_GUI_MODE STREQUAL "Standard")
           gui/tonemappingDialog.ui
           gui/skylightDialog.ui
           gui/seasonsWidget.ui
+          gui/specificTimeDialog.ui
      )
 
      IF(ENABLE_SCRIPTING)
