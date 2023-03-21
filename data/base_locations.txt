@@ -19,6 +19,7 @@
 #   - TimeZone (empty=auto)
 #   - Planet (empty=Earth)
 #   - LandscapeKey (empty=auto)
+Tangara da Serra  Mato Grosso Southern America  N 100 14.619782S  57.487448W  423 5 Southern  America/Amazon  Earth
 les Escaldes	Escaldes-Engordany	19	R	15.853	42.50729N	1.53414E	1033	5	Europe/Andorra
 Andorra la Vella	Andorra la Vella	19	C	20.43	42.50779N	1.52109E	1037	5	Europe/Andorra
 Umm Al Quwain City	Imarat Umm al Qaywayn	16	R	62.747	25.56473N	55.55517E	2	6	Asia/Dubai
